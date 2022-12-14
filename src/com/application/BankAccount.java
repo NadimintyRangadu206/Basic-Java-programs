@@ -2,42 +2,37 @@ package com.application;
 
 public class BankAccount {
 
-	 String acctHolderName;
-	 long accountNumber;
-	 double balance;
-	 int mobileNo;
-	 String state;
-	 String bankName;
-	 
-	public BankAccount(String aHn,long aN, double b,int mN,String s,String bN){
-		acctHolderName=aHn;
-		accountNumber=aN;
-		balance=b;
-		mobileNo=mN;
-		state=bN;
-	 }
-	
-	public double checkBalance() {	
-		return balance;
+	double amount = 10000.00;
+
+	public void welCome() {
+
+		System.out.println("Wel come to my Bank");
 	}
-	
-	public double deposit(double b) {
-		double totalBalnce=balance+b;
-		return totalBalnce;
+
+	public void checkBalance() {
+
+		System.out.println("Current Balance !" + amount);
 	}
-	
-	public double withdraw(double b) {
-		
-	double d=balance-b;
-		return d;
+
+	public void deposit(double deposit) {
+		double totalAmount = deposit + amount;
+		amount = totalAmount;
+		System.out.println("Total Amount in our bank:" + amount);
+
 	}
-	
+
+	public void withdraw(double withdraw) {
+		double required = amount - withdraw;
+		System.out.println("After withdraw than required amount in bank:" + required);
+	}
+
 	public static void main(String[] args) {
-		BankAccount bank=new BankAccount("Raju",32428478,1000.00,49234892,"Andra Pradesh","Indusind");
-		System.out.println(bank.checkBalance());
-		
-		System.out.println(bank.deposit(2000.00));
-		System.out.println(bank.withdraw(500.00));
-		
+
+		BankAccount ba = new BankAccount();
+		ba.welCome();
+		ba.checkBalance();
+		ba.deposit(10000.00);
+		ba.withdraw(5000.00);
+
 	}
 }

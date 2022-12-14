@@ -1,1 +1,8 @@
-my name is Rangadu
+This tutorial introduces how to convert char array to int in Java 
+and lists some example codes to understand the topic.
+An array is a container that stores elements of the same data type. 
+For example, an integer array can have only integer type values. 
+An array that contains char values will be called a char array.
+In this article, we will use several built-in methods such as 
+parseInt(), valueOf(), String(), etc
+that we will find a value in the given array.
