@@ -10,14 +10,10 @@ import com.springboot.main.entity.Employee;
 @Service
 public interface EmployeeService {
 
-	Employee saveEmployee(Employee employee);
-
-	List<Employee> getEmployee();
-
-	Employee getEmployeeById(int employeeId);
-
-
-
-	
+//	Employee saveEmployee(Employee employee);
+//
+//	List<Employee> getEmployee();
+//
+//	Employee getEmployeeById(int employeeId);
 
 }
