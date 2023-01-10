@@ -17,32 +17,32 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	public EmployeeRepository employeeRepository;
 
-	@Override
-	public Employee saveEmployee(Employee employee) {
-		
-		return employeeRepository.save(employee);
-	}
-
-	@Override
-	public List<Employee> getEmployee() {
-		
-		return employeeRepository.findAll();
-	}
-
-	@Override
-	public Employee getEmployeeById(int employeeId) {
-	Optional<Employee> optional=employeeRepository.findById(employeeId);
-	
-	if(optional.isPresent()) {
-		 employeeRepository.findtById(employeeId);
-	}
-	else {
-	System.out.println("Employee Id Is not exist or not match");
-	}
-	return null;
-	
-
-	}
+//	@Override
+//	public Employee saveEmployee(Employee employee) {
+//		
+//		return employeeRepository.save(employee);
+//	}
+//
+//	@Override
+//	public List<Employee> getEmployee() {
+//		
+//		return employeeRepository.findAll();
+//	}
+//
+//	@Override
+//	public Employee getEmployeeById(int employeeId) {
+//	Optional<Employee> optional=employeeRepository.findById(employeeId);
+//	
+//	if(optional.isPresent()) {
+//		 employeeRepository.findtById(employeeId);
+//	}
+//	else {
+//	System.out.println("Employee Id Is not exist or not match");
+//	}
+//	return null;
+//	
+//
+//	}
 
 	
 	
