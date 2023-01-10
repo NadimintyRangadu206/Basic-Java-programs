@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tbl_Employee_info")
+@Table(name = "employee_info")
 public class Employee {
 
 	@Id
@@ -17,7 +17,7 @@ public class Employee {
 	@Column(name = "employee_id")
 	private int employeeId;
 
-	@Column(name = "employee_name")
+	@Column(name = "emp_name")
 	private String empName;
 
 	@Column(name = "salary")

@@ -8,5 +8,8 @@ import com.springboot.main.entity.Employee;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
+	Employee findtById(int employeeId);
+
 	
+
 }
