@@ -29,7 +29,7 @@ public class ProductServiceImpl implements ProductService {
 		} else {
 			product = new Product();
 		}
-		BeanUtils.copyProperties(productRequest,product);
+		BeanUtils.copyProperties(productRequest, product);
 		return productRepository.save(product);
 	}
 
